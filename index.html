@@ -3,9 +3,28 @@
 <head>
   <title>The Monday Snobs</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <h1>The Monday Snobs</h1>
-  <h2>Проект временно заморожен</h2>
+<body class="page">
+
+  <h1 class="page__header visually-hidden">The Monday Snobs</h1>
+  <img class="page__logo" src="img/logo.png" width="320px" height="auto" alt="TMS logo">
+  <h2 class="page__notice">Проект временно заморожен</h2>
+  <section class="page__albums albums">
+    <h1 class="albums__header">Наши альбомы:</h1>
+    <ol class="albums__list">
+      <li class="albums__item"><iframe src="https://open.spotify.com/embed/album/3ckxo43XEPWypihwVWRLmq" width="100%" height="250" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
+      <li class="albums__item"><iframe src="https://open.spotify.com/embed/album/3EYaKOBtDQgbu44UVW6rrk" width="100%" height="250" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
+    </ol>
+  </section>
+  <section class="page__listen listen">
+    <h1 class="listen__header">Где нас послушать:</h1>
+    <ul class="listen__list">
+      <li class="listen__item"><a class="listen__link apple" href="https://music.apple.com/ru/artist/the-monday-snobs/1410921498"><span class="visually-hidden">Apple Music</span></a></li>
+      <li class="listen__item"><a class="listen__link vk" href="https://vk.com/audios-160358874"><span class="visually-hidden">Вконтакте</span></a></li>
+      <li class="listen__item"><a class="listen__link spotify" href="https://open.spotify.com/artist/4RlwV3p3rBVG30kLasPi6D?si=WK9n87cbTXKDxyX9Ze5MZw&dl_branch=1"><span class="visually-hidden">Spotify</span></a></li>
+    </ul>
+  </section>
+  <div class="page__back"></div>
 </body>
 </html>
