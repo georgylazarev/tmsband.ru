@@ -14,8 +14,7 @@
   <section class="page__albums albums">
     <h1 class="albums__header">Наши альбомы:</h1>
     <ol class="albums__list">
-      <li class="albums__item"><iframe src="https://open.spotify.com/embed/album/3ckxo43XEPWypihwVWRLmq" width="100%" height="250" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
-      <li class="albums__item"><iframe src="https://open.spotify.com/embed/album/3EYaKOBtDQgbu44UVW6rrk" width="100%" height="250" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe></li>
+      Ваш браузер не поддерживает JavaScript :(
     </ol>
   </section>
   <section class="page__listen listen">
@@ -27,5 +26,26 @@
     </ul>
   </section>
   <div class="page__back"></div>
+  <template id="songs-element">
+    <li class="songs-list__item">
+      <figure class="songs-list__song">
+        <figcaption class="songs-list__caption"></figcaption>
+        <audio controls src="">
+          Ваш браузер не поддерживает элемент <code>audio</code>.
+        </audio>
+      </figure>
+    </li>
+  </template>
+  <template id="albums-element">
+    <li class="albums__item">
+      <h1 class="albums__title"></h1>
+      <img class="albums__cover" src="" alt="">
+      <ul class="albums__songs-list songs-list">
+      </ul>
+    </li>
+  </template>
+  <script src="js/data.js"></script>
+  <script src="js/albums.js"></script>
+  <script src="js/songs.js"></script>
 </body>
 </html>
