@@ -49,10 +49,16 @@ html {
 }
 
 .albums__header,
-.listen__header,
-.page__notice {
+.listen__header {
     min-width: 300px;
     text-shadow: 0 0 10px #7dabc4;
+}
+
+.page__notice {
+    color: #3f94b9;
+    min-width: 300px;
+    text-shadow: 0 0 10px #7dabc4;
+    text-align: center;
 }
 
 .albums__list {
@@ -117,4 +123,44 @@ html {
 .spotify:hover,
 .apple:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 420px) {
+    .page__logo {
+        width: 300px;
+    }
+
+    .albums__list {
+        justify-content: center;
+    }
+
+    .albums__header,
+    .listen__header,
+    .page__notice {
+        padding: 0 10px;
+        font-size: 18px;
+    }
+
+    .listen {
+        padding-bottom: 20px;
+    }
+
+    .listen__list {
+        gap: 21px;
+    }
+
+    .vk {
+        width: 42px;
+        height: 42px;
+    }
+
+    .apple {
+        width: 42px;
+        height: 42px;
+    }
+
+    .spotify {
+        width: 140px;
+        height: 42px;
+    }
 }
