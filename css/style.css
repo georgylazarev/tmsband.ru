@@ -7,23 +7,19 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
     min-width: 300px;
     height: 100%;
 }
 
-.page__back {
-    background-image: url("../img/ice.jpg");
-    background-size: cover;
-    opacity: 0.2;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
+/*.page__back {*/
+/*    background-image: url("../img/ice.jpg");*/
+/*    background-size: cover;*/
+/*    opacity: 0.2;*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    z-index: 0;*/
+/*}*/
 
 .visually-hidden {
     width: 0;
@@ -34,6 +30,13 @@ html {
     font-size: 0;
 }
 
+.page__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
 .page__logo {
     margin-top: 20px;
     position: relative;
@@ -42,23 +45,30 @@ html {
 
 .albums {
     width: 100%;
-    max-width: 620px;
     min-width: 300px;
     position: relative;
-    z-index: 1;
+    background-color: black;
+    color: white;
 }
 
 .albums__header,
 .listen__header {
     min-width: 300px;
-    text-shadow: 0 0 10px #7dabc4;
+    text-align: center;
 }
 
 .page__notice {
-    color: #3f94b9;
+    color: white;
     min-width: 300px;
-    text-shadow: 0 0 10px #7dabc4;
     text-align: center;
+    line-height: 40px;
+    background-color: red;
+    position: absolute;
+    transform: rotate(-30deg);
+    z-index: 2;
+    left: -50px;
+    top: 60px;
+    padding: 0 100px;
 }
 
 .albums__list {
@@ -67,21 +77,52 @@ html {
     margin: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
 
 .albums__item {
     min-width: 300px;
+    background-color: black;
+    color: white;
+}
+
+.albums__title {
+    margin: 0;
+}
+
+.albums__cover {
+    width: 100%;
+    height: auto;
+}
+
+.songs-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.songs-list__song {
+    margin: 0;
+}
+
+.songs-list__caption {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+audio {
+    width: 100%;
 }
 
 .listen {
     width: 100%;
-    max-width: 620px;
     min-width: 300px;
     position: relative;
-    z-index: 1;
+    padding-bottom: 20px;
 }
 
 .listen__list {
@@ -141,9 +182,7 @@ html {
         font-size: 18px;
     }
 
-    .listen {
-        padding-bottom: 20px;
-    }
+
 
     .listen__list {
         gap: 21px;
